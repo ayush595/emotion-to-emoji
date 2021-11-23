@@ -1,0 +1,83 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+  <div class="container">
+    <center>
+      <h1>
+        Emotion to Emoji
+        <br>
+        <br>
+        <span>&#128512;</span>
+      <span>&#128544;</span>
+      <span>&#128557;</span>
+      <span>&#128532;</span>
+      <span>&#128547;</span>
+      </h1>
+      <h2 id="smash">
+        Take your selfie to generate emoji
+
+        <br>
+<br>
+<b style="color: yellow;">ARE YOU HAPPY &#128512;</b><br>
+<br>
+<b style="color: red;">ARE YOU ANGRY &#128544;</b><br>
+<br>
+<b style="color: blue;">ARE YOU SAD &#128543;</b><br>
+      </h2>
+      <div id="webcam" class="col-md-4 col-sm-12 col-xs-12">
+<label>Webcam View</label>
+<div id="camera">
+
+</div>
+<br>
+<button id="imagecapturer" class="btn" onclick="take_snapshot()">Capture Image</button>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+<label>Prediction 1:- </label>
+<p id="emotion1"></p>
+<p id="emoji1"></p>
+<br>
+<label>Prediction 2:-</label>
+<p id="emotion2"></p>
+<p id="emoji2"></p>
+      </div>
+      
+      <div id="snapshot" class="col-md-4 col-sm-12 col-xs-12">
+        <label>snapshoted photo(pic)</label>
+        <div id="result">
+
+        </div>
+        <br>
+        <button id="emotionpredict" class="btn" onclick="check()">predict emotion</button>
+      </div>
+      
+      
+    </center>
+
+  </div>
+
+     
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

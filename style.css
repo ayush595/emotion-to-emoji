@@ -1,0 +1,52 @@
+body
+{
+  font-family: cursive;
+  background-color: darkblue;
+}
+h1
+{
+  font-family: 'Are You Serious', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  letter-spacing: 5px;
+  border-radius: 20px;
+}
+button{
+  color: white;
+  background-color: black;
+
+}
+button:hover
+{
+  color: white !important;
+
+}
+label
+{
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+#smash
+{
+  color: white;
+  background-color: black;
+  padding: 15px;
+}
+#result, #camera
+{
+  border: lightgreen;
+  width: 350px;
+  height: 300px;
+  border-style: ridge;
+}
+p
+{
+  color: whitesmoke;
+ font-size: 22px;
+  padding: 5px;
+  background-image: linear-gradient(to right top, #ffffff, #cacaca, #979797, #676767, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #676767, #979797, #cacaca, #ffffff);
+}
